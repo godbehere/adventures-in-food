@@ -32,7 +32,10 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
 
     const main = document.querySelector('#main');
 
-    let newPost = createBlogPost("TestTitle","This is my first post","https://photos.app.goo.gl/iAL8cUvDCKpRzGRo8").newPost;
+    let newPost = createBlogPost("Dakgogi - Korean Fried Chicken",
+                "Located near Yonge & Finch in North York - one of only two location in the GTA - I was excited to "
+                + "try this very popular restaurant.",
+                "https://i.imgur.com/zZiKoXb.jpg").newPost;
 
     main.appendChild(newPost);
 
