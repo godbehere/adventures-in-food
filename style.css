@@ -10,7 +10,6 @@
 }
 
 article {
-    
     display: flex;
     border: 1px solid black;
     width: 75%;
@@ -19,14 +18,10 @@ article {
 nav {
     background-color: rgb(170, 214, 133);
     border: 1px black solid;
-    /* border-right: 1px black solid;
-    border-left: 1px black solid;
-    margin-bottom: 15px; */
 }
 
 nav a {
     display: block;
-    /* padding: 5px; */
     text-decoration: none;
     padding: 10px;
     margin: 0 5px 0 5px;
@@ -39,15 +34,22 @@ nav ul {
 }
 
 nav li {
-    /* margin: 0 2px 0 0; */
     border-top-right-radius: .5em;
-    /* border-top: 1px solid black; */
     border-right: 1px solid black;
     box-shadow: 1px -1px 1px black;
 }
 
+nav input {
+    height: 25px;
+}
+
 .box {
     display: flex;
+    align-items: center;
+}
+
+.nav-box {
+    justify-content: space-between;
 }
 
 .box-vertical {
@@ -88,5 +90,4 @@ nav li {
     background-position: 50% 52%;
     width: 100%;
     box-shadow: 0 3px 2px black;
-    /* background-color: black; */
 }
