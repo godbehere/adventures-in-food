@@ -1,6 +1,6 @@
 .blog-post img {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
 }
 
 .blog-post div {
@@ -10,9 +10,9 @@
 }
 
 article {
-    display: flex;
+    justify-content: space-evenly;
     border: 1px solid black;
-    width: 75%;
+    width: 60%;
 }
 
 nav {
@@ -85,6 +85,7 @@ nav input {
 .cover {
     height: 350px;
     background-image: url(https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    /* background-image: url(https://photos.app.goo.gl/iAL8cUvDCKpRzGRo8); */
     background-repeat: no-repeat;
     background-size:cover;
     background-position: 50% 52%;

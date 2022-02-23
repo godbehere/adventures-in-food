@@ -22,6 +22,7 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
     newPost.appendChild(rightDiv);
 
     newPost.classList.add("blog-post");
+    newPost.classList.add("box");
 
     return { newPost, };
 
@@ -31,7 +32,7 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
 
     const main = document.querySelector('#main');
 
-    let newPost = createBlogPost("TestTitle","This is my first post","https://i.imgur.com/OfXA2oT.jpg").newPost;
+    let newPost = createBlogPost("TestTitle","This is my first post","https://photos.app.goo.gl/iAL8cUvDCKpRzGRo8").newPost;
 
     main.appendChild(newPost);
 
