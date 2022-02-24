@@ -23,6 +23,7 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
 
     newPost.classList.add("blog-post");
     newPost.classList.add("box");
+    newPost.classList.add("clickable");
 
     return { newPost, };
 
@@ -38,5 +39,19 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
                 "https://i.imgur.com/zZiKoXb.jpg").newPost;
 
     main.appendChild(newPost);
+
+    let clickables = document.querySelectorAll(".clickable");
+
+    clickables.forEach(element => {
+        element.addEventListener("mousedown", (e) => {
+            element.classList.add("clicked");
+        });
+    });
+
+    document.addEventListener("mouseup", (e) => {
+        clickables.forEach(element => {
+            element.classList.remove("clicked");
+        });
+    });
 
 })();
