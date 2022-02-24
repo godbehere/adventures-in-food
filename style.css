@@ -1,15 +1,10 @@
-
-
-.blog-post img {
-    height: 250px;
-    border: black 1px solid;
-    box-shadow: 2px 2px 2px black;
+h1 {
+    text-align: center;
 }
 
-.blog-post div {
-
-    display: inline-block;
-    margin: 1em;
+img {
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
 }
 
 article {
@@ -23,22 +18,14 @@ article {
     border-radius: 20px;
 }
 
-.clickable {
-    cursor: pointer;
+body {
+    background-color: rgb(41, 41, 41);
+    /* color: white; */
 }
 
-.clicked {
-    box-shadow: inset 1px 1px 1px black;
-    position: relative;
-    top: -1px;
-    left: -1px;
-}
-
-.article-thumbnail {
-    border: 3px solid black;
-    height: 250px;
-    width: 300px;
-    margin: 25px;
+section {
+    width: 100%;
+    padding: 20px;
 }
 
 nav {
@@ -70,6 +57,37 @@ nav li {
 
 nav input {
     height: 25px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clicked {
+    box-shadow: inset 1px 1px 1px black;
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+
+.article-thumbnail {
+
+    height: 250px;
+    width: 300px;
+    margin: 25px;
+    object-fit: cover;
+}
+
+.blog-post img {
+    height: 250px;
+    border: black 1px solid;
+    box-shadow: 2px 2px 2px black;
+}
+
+.blog-post div {
+
+    display: inline-block;
+    margin: 1em;
 }
 
 .thumbnails {
@@ -132,16 +150,6 @@ nav input {
     background-position: 50% 52%;
     width: 100%;
     box-shadow: 0 3px 2px black;
-}
-
-body {
-    background-color: rgb(41, 41, 41);
-    /* color: white; */
-}
-
-section {
-    width: 100%;
-    padding: 20px;
 }
 
 .adventure-heading {
