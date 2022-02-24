@@ -1,5 +1,5 @@
 .blog-post img {
-    width: 250px;
+    height: 250px;
     border: black 1px solid;
     box-shadow: 2px 2px 2px black;
 }
@@ -11,6 +11,7 @@
 }
 
 article {
+    color: black;
     justify-content: space-evenly;
     border: 1px solid black;
     width: 75%;
@@ -19,7 +20,15 @@ article {
     border-radius: 20px;
 }
 
+.article-thumbnail {
+    border: 3px solid black;
+    height: 250px;
+    width: 300px;
+    margin: 25px;
+}
+
 nav {
+    width: 100%;
     /* background-color: rgb(170, 214, 133); */
     background-color: #97ad5c;
     border: 1px black solid;
@@ -49,6 +58,10 @@ nav input {
     height: 25px;
 }
 
+.thumbnails {
+    flex-wrap: wrap;
+}
+
 .box {
     display: flex;
     align-items: center;
@@ -62,16 +75,20 @@ nav input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
 }
 
 #main {
     /* background-color: rgb(231, 255, 203); */
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
     background-color: #f2e4a6;
-    height: 100vh;
-    border-left: 1px black solid; 
-    border-bottom: 1px black solid; 
-    border-right: 1px black solid; 
+    height: fit-content;
+    border: 1px black solid; 
+    /* border-bottom: 1px black solid; 
+    border-right: 1px black solid;  */
 }
 
 .tab-one {
@@ -92,12 +109,27 @@ nav input {
 }
 
 .cover {
+    border: 1px solid black;
+    position: relative;
     height: 350px;
     background-image: url(https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    /* background-image: url(https://photos.app.goo.gl/iAL8cUvDCKpRzGRo8); */
     background-repeat: no-repeat;
     background-size:cover;
     background-position: 50% 52%;
     width: 100%;
     box-shadow: 0 3px 2px black;
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+    /* color: white; */
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+}
+
+.adventure-heading {
+    margin: 15px;
 }
