@@ -45,12 +45,14 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
     clickables.forEach(element => {
         element.addEventListener("mousedown", (e) => {
             element.classList.add("clicked");
+            element.classList.remove("not-clicked");
         });
     });
 
     document.addEventListener("mouseup", (e) => {
         clickables.forEach(element => {
             element.classList.remove("clicked");
+            element.classList.add("not-clicked");
         });
     });
 

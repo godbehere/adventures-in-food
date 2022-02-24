@@ -2,11 +2,6 @@ h1 {
     text-align: center;
 }
 
-img {
-    border: 1px solid black;
-    box-shadow: 1px 1px 1px black;
-}
-
 article {
     padding: 15px;
     color: black;
@@ -63,6 +58,10 @@ nav input {
     cursor: pointer;
 }
 
+.not-clicked {
+    box-shadow: 1px 1px 1px black;
+}
+
 .clicked {
     box-shadow: inset 1px 1px 1px black;
     position: relative;
@@ -70,12 +69,18 @@ nav input {
     left: -1px;
 }
 
-.article-thumbnail {
+.clickable-div {
+    margin: 25px;
+    border: 1px solid black;
 
+}
+
+.article-thumbnail {
+    display: block;
     height: 250px;
     width: 300px;
-    margin: 25px;
     object-fit: cover;
+    border: none;
 }
 
 .blog-post img {
