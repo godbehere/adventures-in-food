@@ -1,31 +1,4 @@
-@media screen and (max-width: 1080px) {
-    .thumbnails {
-        justify-content: center;
-    }
-    section {
-        text-align: center;
-    }
 
-}
-
-@media screen and (max-width: 720px) {
-    article {
-        flex-wrap: wrap;
-    }
-    .blog-post img {
-        height: 150px;
-    }
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
-    .tab {
-        width: 100%;
-    }
-    nav div {
-        flex-direction: column;
-    }
-}
 
 .blog-post img {
     height: 250px;
@@ -56,6 +29,9 @@ article {
 
 .clicked {
     box-shadow: inset 1px 1px 1px black;
+    position: relative;
+    top: -1px;
+    left: -1px;
 }
 
 .article-thumbnail {

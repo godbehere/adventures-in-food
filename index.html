@@ -6,6 +6,39 @@
 	
 	<link rel="stylesheet" href="style.css">
 
+	<style>
+		@media screen and (max-width: 1080px) {
+			.thumbnails {
+				justify-content: center;
+			}
+			section {
+				text-align: center;
+			}
+
+		}
+
+		@media screen and (max-width: 720px) {
+			article {
+				flex-wrap: wrap;
+			}
+			.blog-post img {
+				height: 100px;
+				width: 100px;
+				
+			}
+			nav ul {
+				flex-direction: column;
+				width: 100%;
+			}
+			.tab {
+				width: 100%;
+			}
+			nav div {
+				flex-direction: column;
+			}
+		}
+	</style>
+
 </head>
 
 <body>
