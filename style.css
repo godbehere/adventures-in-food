@@ -1,6 +1,7 @@
 .blog-post img {
     width: 250px;
-    height: 250px;
+    border: black 1px solid;
+    box-shadow: 2px 2px 2px black;
 }
 
 .blog-post div {
@@ -12,12 +13,15 @@
 article {
     justify-content: space-evenly;
     border: 1px solid black;
-    width: 60%;
-    /* min-width: fit-content; */
+    width: 75%;
+    background-color: floralwhite;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 20px;
 }
 
 nav {
-    background-color: rgb(170, 214, 133);
+    /* background-color: rgb(170, 214, 133); */
+    background-color: #97ad5c;
     border: 1px black solid;
 }
 
@@ -26,6 +30,7 @@ nav a {
     text-decoration: none;
     padding: 10px;
     margin: 0 5px 0 5px;
+    color: black;
 }
 
 nav ul {
@@ -61,7 +66,8 @@ nav input {
 }
 
 #main {
-    background-color: rgb(255, 240, 199);
+    /* background-color: rgb(231, 255, 203); */
+    background-color: #f2e4a6;
     height: 100vh;
     border-left: 1px black solid; 
     border-bottom: 1px black solid; 
@@ -69,17 +75,19 @@ nav input {
 }
 
 .tab-one {
-    background-color: rgb(255, 240, 199);
+    /* background-color: rgb(255, 240, 199); */
+    background-color: #f2e4a6;
     z-index: 3;
 }
 
 .tab-two {
-    background-color: burlywood;
+    /* background-color: burlywood; */
+    background-color: #71988e;
     z-index: 2;
 }
 
 .tab-three {
-    background-color: tomato;
+    background-color: #dd6555;
     z-index: 1;
 }
 

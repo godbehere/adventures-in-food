@@ -33,8 +33,8 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
     const main = document.querySelector('#main');
 
     let newPost = createBlogPost("Dakgogi - Korean Fried Chicken",
-                "Located near Yonge & Finch in North York - one of only two location in the GTA - I was excited to "
-                + "try this very popular restaurant.",
+                "Located near Yonge & Finch in North York - one of only two location in the GTA - My family and I were excited to "
+                + "try this very popular Korean restaurant.",
                 "https://i.imgur.com/zZiKoXb.jpg").newPost;
 
     main.appendChild(newPost);
