@@ -12,6 +12,19 @@
     article {
         flex-wrap: wrap;
     }
+    .blog-post img {
+        height: 150px;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .tab {
+        width: 100%;
+    }
+    nav div {
+        flex-direction: column;
+    }
 }
 
 .blog-post img {
@@ -27,6 +40,7 @@
 }
 
 article {
+    padding: 15px;
     color: black;
     justify-content: space-evenly;
     border: 1px solid black;
