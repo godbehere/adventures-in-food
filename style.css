@@ -18,6 +18,7 @@ article {
     background-color: floralwhite;
     box-shadow: 1px 1px 1px black;
     border-radius: 20px;
+    position: relative;
 }
 
 body {
@@ -205,7 +206,31 @@ nav input {
     bottom: 10px;
     right: 10px;
     /* background-color: black; */
-    background-image: url(https://i.imgur.com/fbz7Kal.jpg);
+    background-image: url(https://i.imgur.com/vOfEgPn.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-favourite {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 10px;
+    right: 50px;
+    /* background-color: black; */
+    background-image: url(https://i.imgur.com/MCmeT6W.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-share {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 10px;
+    right: 90px;
+    /* background-color: black; */
+    background-image: url(https://i.imgur.com/OfHJ1Et.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
