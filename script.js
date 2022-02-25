@@ -61,21 +61,20 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
     const bookmarks = document.querySelectorAll(".icon-bookmark");
     const favourites = document.querySelectorAll(".icon-favourite");
 
+    let disabled = false;
+
     console.log(bookmarks);
 
     bookmarks.forEach(element => {
         element.addEventListener("mousedown", (e) => {
                 element.classList.toggle("icon-bookmark-filled");
-                element.classList.toggle("icon-bookmark");
-            // console.log("bookmark");
-            // if (element.classList.contains("icon-bookmark")) {
-            //     element.classList.add("icon-bookmark-filled");
-            //     element.classList.remove("icon-bookmark");
-            // } else {
-            //     element.classList.remove("icon-bookmark-filled");
-            //     element.classList.add("icon-bookmark");
-            // }
-            
+                element.classList.toggle("icon-bookmark");          
+        });
+        element.addEventListener("mouseover", (e) => {
+            disabled = true;
+        });
+        element.addEventListener("mouseout", (e) => {
+            disabled = false;
         });
     });
 
@@ -83,28 +82,30 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
         element.addEventListener("mousedown", (e) => {
                 element.classList.toggle("icon-favourite-filled");
                 element.classList.toggle("icon-favourite");
-            // console.log("favourite");
-            // if (element.classList.contains("icon-favourite")) {
-                // element.classList.add("icon-favourite-filled");
-                // element.classList.remove("icon-favourite");
-            // } else {
-            //     element.classList.remove("icon-favourite-filled");
-            //     element.classList.add("icon-favourite");
-            // }
+        });
+        element.addEventListener("mouseover", (e) => {
+            disabled = true;
+        });
+        element.addEventListener("mouseout", (e) => {
+            disabled = false;
         });
     });
 
     clickables.forEach(element => {
         element.addEventListener("mousedown", (e) => {
-            element.classList.add("clicked");
-            element.classList.remove("not-clicked");
+            if (!disabled){
+                element.classList.add("clicked");
+                element.classList.remove("not-clicked");
+            }
         });
     });
 
     document.addEventListener("mouseup", (e) => {
         clickables.forEach(element => {
-            element.classList.remove("clicked");
-            element.classList.add("not-clicked");
+            if (!disabled){
+                element.classList.remove("clicked");
+                element.classList.add("not-clicked");
+            }
         });
     });
 
