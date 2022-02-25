@@ -12,6 +12,8 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
     const leftDiv = document.createElement('div');
     const rightDiv = document.createElement('div');
 
+    rightDiv.id = "description";
+
     title.innerHTML = postTitle;
     description.innerHTML = postDescription;
 
@@ -37,6 +39,7 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
     newPost.classList.add("blog-post");
     newPost.classList.add("box");
     newPost.classList.add("clickable");
+    newPost.classList.add("not-clicked");
 
     return { newPost, };
 

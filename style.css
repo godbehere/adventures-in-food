@@ -14,9 +14,8 @@ article {
     color: black;
     justify-content: space-evenly;
     border: 1px solid black;
-    width: 75%;
+    width: fit-content;
     background-color: floralwhite;
-    box-shadow: 1px 1px 1px black;
     border-radius: 20px;
     position: relative;
 }
@@ -60,6 +59,10 @@ nav li {
 
 nav input {
     height: 25px;
+}
+
+#description {
+    max-width: 720px;
 }
 
 .clickable {
