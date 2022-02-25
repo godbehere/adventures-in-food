@@ -38,6 +38,13 @@
 			nav div {
 				flex-direction: column;
 			}
+			nav {
+				position: static;
+
+			}
+			.cover {
+				top: 0;
+			}
 		}
 
 	</style>
@@ -48,9 +55,9 @@
 	<nav>
 		<div class="box nav-box">
 			<ul class="box">
-				<li class="tab tab-one clickable"><a href=''>Home</a></li>
-				<li class="tab tab-two clickable"><a href=''>Recipes</a></li>
-				<li class="tab tab-three clickable"><a href=''>Reviews</a></li>
+				<li class="tab tab-one clickable not-clicked"><a href=''>Home</a></li>
+				<li class="tab tab-two clickable not-clicked"><a href=''>Recipes</a></li>
+				<li class="tab tab-three clickable not-clicked"><a href=''>Reviews</a></li>
 			</ul>
 			<div class="box">
 				<input type="search" placeholder="search"/>
@@ -106,7 +113,7 @@
 				</div>
 				<div class="clickable clickable-div not-clicked">
 					<img src="https://i.imgur.com/t0AuImc.jpg" class="article-thumbnail"/>
-					<h3 class="thumbnail-heading">Momo's in Parkdale</h3>
+					<h3 class="thumbnail-heading">Momos in Parkdale</h3>
 					<span class="icon icon-bookmark"></span>
 				</div>
 				<div class="clickable clickable-div not-clicked">
