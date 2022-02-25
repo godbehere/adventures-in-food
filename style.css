@@ -190,10 +190,24 @@ nav input {
     left: 50%;
     transform: translate(-50%,-100%);
     color: white;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 1px black;
     text-align: center;
     width: 75%;
     font-family: 'Kufam', sans-serif;
+    font-size: 25px;
+    text-decoration-line: underline;
+}
+
+.icon-bookmark {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 10px;
+    right: 10px;
+    /* background-color: black; */
+    background-image: url(https://i.imgur.com/fbz7Kal.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 hr {
