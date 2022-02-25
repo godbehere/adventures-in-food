@@ -1,9 +1,16 @@
 h1 {
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    text-decoration: underline overline;
+}
+
+article h2 {
+    font-family: 'Kufam', sans-serif;
 }
 
 article {
-    padding: 15px;
+    margin: 15px;
     color: black;
     justify-content: space-evenly;
     border: 1px solid black;
@@ -66,15 +73,13 @@ nav input {
     -webkit-box-shadow: inset 2px 2px 2px #000;
     -moz-box-shadow: inset 2px 2px 2px #000;
     box-shadow: inset 1px 1px 2px #000;
-    bottom: 0;
+    border-radius: inherit;
     content: "";
-    display: block;
-    left: 0;
     height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .clicked {
@@ -111,6 +116,10 @@ nav input {
 
 .thumbnails {
     flex-wrap: wrap;
+    background-color: floralwhite;
+    /* box-shadow: 0 5px 5px floralwhite, 0 -5px 5px floralwhite; */
+    border-top: 3px black double;
+    border-bottom: 3px black double;
 }
 
 .box {
@@ -173,4 +182,23 @@ nav input {
 
 .adventure-heading {
     margin: 15px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+hr {
+    width: 75%;
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #f2e4a6;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
