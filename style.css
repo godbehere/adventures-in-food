@@ -61,10 +61,6 @@ nav input {
     height: 25px;
 }
 
-#description {
-    max-width: 720px;
-}
-
 .clickable {
     cursor: pointer;
 }
@@ -152,6 +148,10 @@ nav input {
     border: 1px black solid; 
     /* border-bottom: 1px black solid; 
     border-right: 1px black solid;  */
+}
+
+#description {
+    max-width: 720px;
 }
 
 .tab-one {
