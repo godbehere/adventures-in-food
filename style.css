@@ -199,40 +199,54 @@ nav input {
     text-decoration-line: underline;
 }
 
-.icon-bookmark {
+.icon {
     position: absolute;
     height: 30px;
     width: 30px;
     bottom: 10px;
-    right: 10px;
-    /* background-color: black; */
-    background-image: url(https://i.imgur.com/vOfEgPn.png);
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: cell;
+}
+
+.icon-bookmark {
+
+    right: 10px;
+
+    background-image: url(https://i.imgur.com/vOfEgPn.png);
+
+}
+
+.icon-bookmark-filled {
+
+    right: 10px;
+
+    background-image: url(https://i.imgur.com/MiJ3Ffr.png);
+
 }
 
 .icon-favourite {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    bottom: 10px;
+
     right: 50px;
-    /* background-color: black; */
+
+    background-image: url(https://i.imgur.com/ZMqSSw4.png);
+
+}
+
+.icon-favourite-filled {
+
+    right: 50px;
+
     background-image: url(https://i.imgur.com/MCmeT6W.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+
 }
 
 .icon-share {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    bottom: 10px;
+
     right: 90px;
-    /* background-color: black; */
+
     background-image: url(https://i.imgur.com/OfHJ1Et.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+
 }
 
 hr {

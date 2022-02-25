@@ -17,6 +17,9 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
 
     image.src = imageURL;
 
+    bookmarkIcon.classList.add('icon');
+    favouriteIcon.classList.add('icon');
+    shareIcon.classList.add('icon');
     bookmarkIcon.classList.add('icon-bookmark');
     favouriteIcon.classList.add('icon-favourite');
     shareIcon.classList.add('icon-share');
@@ -50,7 +53,39 @@ const createBlogPost = (postTitle, postDescription, imageURL) => {
 
     main.appendChild(newPost);
 
-    let clickables = document.querySelectorAll(".clickable");
+    const clickables = document.querySelectorAll(".clickable");
+
+    const bookmarks = document.querySelectorAll(".icon-bookmark");
+    const favourites = document.querySelectorAll(".icon-favourite");
+
+    console.log(bookmarks);
+
+    bookmarks.forEach(element => {
+        element.addEventListener("click", (e) => {
+            console.log("bookmark");
+            if (element.classList.contains("icon-bookmark")) {
+                element.classList.add("icon-bookmark-filled");
+                element.classList.remove("icon-bookmark");
+            } else {
+                element.classList.remove("icon-bookmark-filled");
+                element.classList.add("icon-bookmark");
+            }
+            
+        });
+    });
+
+    favourites.forEach(element => {
+        element.addEventListener("click", (e) => {
+            console.log("favourite");
+            if (element.classList.contains("icon-favourite")) {
+                element.classList.add("icon-favourite-filled");
+                element.classList.remove("icon-favourite");
+            } else {
+                element.classList.remove("icon-favourite-filled");
+                element.classList.add("icon-favourite");
+            }
+        });
+    });
 
     clickables.forEach(element => {
         element.addEventListener("mousedown", (e) => {
