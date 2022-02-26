@@ -87,6 +87,12 @@ hr:after {
     top: -13px;
 }
 
+.sub-heading {
+    font-size: 25px;
+    text-decoration: underline;
+    font-family: 'Permanent Marker', sans-serif;
+}
+
 .clickable {
     cursor: pointer;
 }
@@ -116,6 +122,8 @@ hr:after {
     margin: 25px;
     border: 1px solid black;
     position: relative;
+    padding: 15px 15px 75px 15px;
+    background-color: floralwhite;
 }
 
 .article-thumbnail {
@@ -123,7 +131,7 @@ hr:after {
     height: 250px;
     width: 300px;
     object-fit: cover;
-    border: none;
+    border: 1px solid black;
 }
 
 .blog-post img {
@@ -141,8 +149,12 @@ hr:after {
 .thumbnails {
     flex-wrap: wrap;
     background-color: floralwhite;
-    border-top: 3px black double;
-    border-bottom: 3px black double;
+    border-top: 25px #887548 solid;
+    border-bottom: 25px #887548 solid;
+    background-image: url(https://i.imgur.com/TFyTLa7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 2px 2px black, inset 0 -2px 2px black, 0 2px 5px black, 0 -2px 5px black;
 }
 
 .box {
@@ -163,6 +175,8 @@ hr:after {
 .tab {
     color: black;
     text-decoration: underline;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .tab-one {
@@ -197,20 +211,23 @@ hr:after {
 .adventure-heading {
     margin: 15px;
     font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
 }
 
 .thumbnail-heading {
     position: absolute;
-    top: 50%;
+    /*! top: 72%; */
     left: 50%;
-    transform: translate(-50%,-100%);
-    color: white;
-    text-shadow: 2px 2px 1px black;
+    transform: translate(-50%,0%);
+    color: black;
+    /*! text-shadow: 2px 2px 1px black; */
     text-align: center;
     width: 75%;
-    font-family: 'Kufam', sans-serif;
+    /*! font-family: 'Kufam', sans-serif; */
     font-size: 25px;
-    text-decoration-line: underline;
+    /*! text-decoration-line: underline; */
+    bottom: -20px;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .icon {
